@@ -1,0 +1,12 @@
+@function calculateRem($size) {
+  $remSize: $size / 18px;
+  @return $remSize * 1rem;
+}
+
+@function shade($color, $percentage: 100%) {
+  @return mix(black, $color, $percentage);
+}
+
+@function tint($color, $percentage: 0%) {
+  @return mix(white, $color, $percentage);
+}

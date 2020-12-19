@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+// Import a Google Font
+// @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@font-face {
+  font-family: "Sarodime";
+  src: local("../../fonts/Sarodime.ttf");
+}
+// Set your brand colors
+$purple: #8b65e4;
+$green: #48736a;
+$dark-green: #203f44;
+$pink: #e09ba0;
+$accent-color: #f9f7fa;
+$light-grey: #f5f5f5;
+$dark-grey: #161c29;
+
+//font-sizes
+$rg-size: 18px;
+$lrg-size: 20px;
+$md-size: 28px;
+$lg-size: 36px;
+$xlg-size: 70px;
+
+// Update global variables
+// $family-sans-serif: "Nunito", sans-serif;
+$primary-font: "Oxygen", sans-serif;
+$secondary-font: "Sarodime";
+
+//brand colors
+$primary: $green;
+$secondary: $dark-green;
+$tertiary: $pink;
+$white: $accent-color;
+
+//other colors
+$dark-grey: $dark-grey;
+$grey: $light-grey;
