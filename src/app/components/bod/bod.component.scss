@@ -2,11 +2,18 @@
 @import "../../../scss/abstracts/mixins";
 @import "../../../scss/abstracts/variables";
 
+.container {
+  margin: 0 auto;
+}
+.bod {
+  padding: calculateRem(30px) calculateRem(50px);
+}
 .bod_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: calculateRem(20px) calculateRem(50px);
+  padding: 0 20px;
+  margin-bottom: 10px;
   // background-color: red;
 
   .section_title {
@@ -22,6 +29,10 @@
     color: #c8c8c8;
     .arrow-left {
       margin-right: calculateRem(20px);
+      cursor: pointer;
+    }
+    .arrow-right {
+      cursor: pointer;
     }
   }
 }
