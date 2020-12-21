@@ -2,8 +2,48 @@
 @import "../../../scss/abstracts/mixins";
 @import "../../../scss/abstracts/variables";
 
-p {
-  @include flex-center;
-  font-size: 40px;
+.container {
+  margin: 0 auto;
+}
+.bs {
   height: 100%;
+  padding: calculateRem(30px) calculateRem(50px);
+}
+.bs_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  // background-color: red;
+
+  .section_title {
+    font-size: calculateRem(30px);
+    font-weight: 600;
+  }
+  .pagination {
+    // background-color: blue;
+    // padding: 0 calculateRem(30px);
+    display: flex;
+    justify-content: space-between;
+    font-size: calculateRem(30px);
+    color: #c8c8c8;
+    .arrow-left {
+      margin-right: calculateRem(20px);
+      cursor: pointer;
+    }
+    .arrow-right {
+      cursor: pointer;
+    }
+  }
+}
+.bs_item {
+  display: flex;
+  // justify-content: space-around;
+  div {
+    margin-right: 50px;
+  }
+  div {
+    margin-top: 10px;
+  }
 }

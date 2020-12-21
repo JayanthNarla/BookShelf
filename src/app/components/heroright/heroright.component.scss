@@ -1,0 +1,17 @@
+@import "../../../scss/abstracts/functions";
+@import "../../../scss/abstracts/mixins";
+@import "../../../scss/abstracts/variables";
+
+.righthero {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: calculateRem(30px) calculateRem(20px);
+  padding-right: calculateRem(50px);
+  app-authors {
+    flex: 1;
+  }
+  app-freebooks {
+    flex: 1;
+  }
+}

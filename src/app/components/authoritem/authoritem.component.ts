@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-authoritem',
   templateUrl: './authoritem.component.html',
-  styleUrls: ['./authoritem.component.scss']
+  styleUrls: ['./authoritem.component.scss'],
 })
 export class AuthoritemComponent implements OnInit {
+  @Input() auth;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

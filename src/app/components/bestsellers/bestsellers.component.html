@@ -1,1 +1,22 @@
-<p>bestsellers works!</p>
+<section class="bs">
+  <div class="container">
+    <div class="bs_header">
+      <div class="section_title">
+        <div>Best Sellers</div>
+      </div>
+      <div class="pagination">
+        <div class="arrow-left">
+          <i class="fas fa-arrow-circle-left"></i>
+        </div>
+        <div class="arrow-right">
+          <i class="fas fa-arrow-circle-right"></i>
+        </div>
+      </div>
+    </div>
+    <div class="bs_item">
+      <div *ngFor="let bs of bestsellers | slice: 0:5">
+        <app-bestselleritems [bs]="bs"></app-bestselleritems>
+      </div>
+    </div>
+  </div>
+</section>

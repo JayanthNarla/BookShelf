@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-freebookitem',
   templateUrl: './freebookitem.component.html',
-  styleUrls: ['./freebookitem.component.scss']
+  styleUrls: ['./freebookitem.component.scss'],
 })
 export class FreebookitemComponent implements OnInit {
+  @Input() freeBk;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

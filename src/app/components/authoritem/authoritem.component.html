@@ -1,1 +1,17 @@
-<p>authoritem works!</p>
+<section class="auth">
+  <div class="auth__card">
+    <div class="auth__profile">
+      <img src="{{ auth.profile }}" alt="" />
+    </div>
+    <div class="auth__dets">
+      <div class="auth__name">{{ auth.name }}</div>
+      <div class="auth__books">
+        <div class="auth__books-count">{{ auth.books }} books</div>
+        <div class="auth__books-reads">
+          <i class="fa fa-circle" aria-hidden="true"></i>
+          <div>{{ auth.reads }} reads</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

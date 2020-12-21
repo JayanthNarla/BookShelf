@@ -16,6 +16,7 @@ import { AuthoritemComponent } from './components/authoritem/authoritem.componen
 import { FreebooksComponent } from './components/freebooks/freebooks.component';
 import { FreebookitemComponent } from './components/freebookitem/freebookitem.component';
 import { BodcardComponent } from './components/bodcard/bodcard.component';
+import { HerorightComponent } from './components/heroright/heroright.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { BodcardComponent } from './components/bodcard/bodcard.component';
     FreebooksComponent,
     FreebookitemComponent,
     BodcardComponent,
+    HerorightComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

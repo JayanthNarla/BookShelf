@@ -1,1 +1,17 @@
-<p>authors works!</p>
+<section class="authors">
+  <div class="container">
+    <div class="author_header">
+      <div class="section_title">
+        <div>Authors</div>
+      </div>
+      <div class="seeall">
+        <div>See All</div>
+      </div>
+    </div>
+    <div class="author_body">
+      <div *ngFor="let auth of authors | slice: 0:3; index as i">
+        <app-authoritem [auth]="auth"></app-authoritem>
+      </div>
+    </div>
+  </div>
+</section>

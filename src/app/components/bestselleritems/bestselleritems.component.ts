@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-bestselleritems',
   templateUrl: './bestselleritems.component.html',
-  styleUrls: ['./bestselleritems.component.scss']
+  styleUrls: ['./bestselleritems.component.scss'],
 })
 export class BestselleritemsComponent implements OnInit {
+  @Input() bs;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

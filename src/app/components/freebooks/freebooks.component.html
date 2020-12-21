@@ -1,1 +1,17 @@
-<p>freebooks works!</p>
+<section class="freebooks">
+  <div class="container">
+    <div class="fb_header">
+      <div class="section_title">
+        <div>Best Sellers</div>
+      </div>
+      <div class="seeall">
+        <div>See All</div>
+      </div>
+    </div>
+    <div class="fb_body">
+      <div *ngFor="let fb of freeBks | slice: 0:2; index as i">
+        <app-freebookitem [freeBk]="fb"></app-freebookitem>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,15 +1,17 @@
+import { FreebooksService } from './../../services/freebooks.service';
+import { FreeBooks } from './../models/FreeBooks';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-freebooks',
   templateUrl: './freebooks.component.html',
-  styleUrls: ['./freebooks.component.scss']
+  styleUrls: ['./freebooks.component.scss'],
 })
 export class FreebooksComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  freeBks: FreeBooks[];
+  constructor(private fb: FreebooksService) {
+    this.freeBks = fb.getFreeBooks();
   }
 
+  ngOnInit(): void {}
 }
