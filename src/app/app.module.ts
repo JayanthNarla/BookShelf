@@ -3,16 +3,37 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { HomeComponent } from './components/home/home.component';
+import { MainappComponent } from './components/mainapp/mainapp.component';
+import { SearchbarComponent } from './components/searchbar/searchbar.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { BestsellersComponent } from './components/bestsellers/bestsellers.component';
+import { BestselleritemsComponent } from './components/bestselleritems/bestselleritems.component';
+import { BodComponent } from './components/bod/bod.component';
+import { AuthorsComponent } from './components/authors/authors.component';
+import { AuthoritemComponent } from './components/authoritem/authoritem.component';
+import { FreebooksComponent } from './components/freebooks/freebooks.component';
+import { FreebookitemComponent } from './components/freebookitem/freebookitem.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidenavComponent,
+    HomeComponent,
+    MainappComponent,
+    SearchbarComponent,
+    HeroComponent,
+    BestsellersComponent,
+    BestselleritemsComponent,
+    BodComponent,
+    AuthorsComponent,
+    AuthoritemComponent,
+    FreebooksComponent,
+    FreebookitemComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

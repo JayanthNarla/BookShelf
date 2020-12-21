@@ -1,0 +1,27 @@
+@import "../../../scss/abstracts/functions";
+@import "../../../scss/abstracts/mixins";
+@import "../../../scss/abstracts/variables";
+
+.bod_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calculateRem(20px) calculateRem(50px);
+  // background-color: red;
+
+  .section_title {
+    font-size: calculateRem(30px);
+    font-weight: 600;
+  }
+  .pagination {
+    // background-color: blue;
+    // padding: 0 calculateRem(30px);
+    display: flex;
+    justify-content: space-between;
+    font-size: calculateRem(30px);
+    color: #c8c8c8;
+    .arrow-left {
+      margin-right: calculateRem(20px);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  app-sidenav {
+    flex: 1;
+  }
+  app-mainapp {
+    flex: 6;
+  }
+}

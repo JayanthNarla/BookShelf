@@ -1,0 +1,20 @@
+@import "../../../scss/abstracts/functions";
+@import "../../../scss/abstracts/mixins";
+@import "../../../scss/abstracts/variables";
+
+#mainapp {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  app-searchbar {
+    flex: 1;
+    border-bottom: 1px solid #000;
+  }
+  app-hero {
+    flex: 9;
+  }
+  app-bestsellers {
+    border-top: 1px solid #000;
+    flex: 4;
+  }
+}

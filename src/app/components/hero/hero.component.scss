@@ -1,0 +1,23 @@
+@import "../../../scss/abstracts/functions";
+@import "../../../scss/abstracts/mixins";
+@import "../../../scss/abstracts/variables";
+
+p {
+  @include flex-center;
+  font-size: 40px;
+  height: 100%;
+}
+
+.hero {
+  @include flex-center;
+  height: 100%;
+  app-bod {
+    flex: 7;
+    height: 100%;
+    border-right: 1px solid black;
+  }
+  app-authors {
+    flex: 3;
+    height: 100%;
+  }
+}
